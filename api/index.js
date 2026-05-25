@@ -28,7 +28,7 @@ app.post('/chat', async (req, res) => {
 
     const apiKey = process.env.GEMINI_API_KEY;
 
-    const MODEL_NAME = 'gemini-2.5-pro';
+    const MODEL_NAME = 'gemini-2.0-flash-lite';
 
     const API_URL =
       `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${apiKey}`;
