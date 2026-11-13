@@ -26,7 +26,7 @@ const REQUEST_TIMEOUT = 30000;
 
 // ROOT
 app.get('/', (req, res) => {
-  res.send('🚀 Server AI Tutor KIDEA berjalan');
+  res.send(' Server AI Tutor KIDEA berjalan');
 });
 
 // HEALTH CHECK
