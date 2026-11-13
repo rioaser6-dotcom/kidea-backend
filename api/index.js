@@ -26,9 +26,10 @@ app.post('/chat', async (req, res) => {
       });
     }
 
-    const apiKey = process.env.GEMINI_API_KEY;
+ const apiKey = process.env.GEMINI_API;
 
-    const MODEL_NAME = 'gemini-2.0-flash-lite';
+const MODEL_NAME =
+  process.env.GEMINI_MODEL || 'gemini-flash-lite-latest';
 
     const API_URL =
       `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${apiKey}`;
