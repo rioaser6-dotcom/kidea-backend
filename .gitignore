@@ -1,11 +1,11 @@
+
 # Dependencies
 node_modules/
 
 # Environment variables
 .env
-
-# Railway Environment Variables
-.env.railway
+.env.*
+!.env.example
 
 # OS generated files
 .DS_Store
